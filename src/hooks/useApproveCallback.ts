@@ -1,6 +1,6 @@
 import { MaxUint256 } from '@ethersproject/constants'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Trade, TokenAmount, CurrencyAmount, ETHER, TOMO } from '@luaswap/sdk'
+import { Trade, TokenAmount, CurrencyAmount, ETHER, TOMO } from 'insswap-sdk'
 import { useCallback, useMemo } from 'react'
 import { ROUTER_ADDRESS, TOMO_ROUTER_ADDRESS } from '../constants'
 import { useTokenAllowance } from '../data/Allowances'

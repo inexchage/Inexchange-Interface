@@ -1,4 +1,4 @@
-import { ChainId, TokenAmount } from '@luaswap/sdk'
+import { ChainId, TokenAmount } from 'insswap-sdk'
 import React, { useMemo } from 'react'
 import { X } from 'react-feather'
 import styled from 'styled-components'

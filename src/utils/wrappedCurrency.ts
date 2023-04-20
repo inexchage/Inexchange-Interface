@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, ETHER, TOMO, Token, TokenAmount, WETH } from '@luaswap/sdk'
+import { ChainId, Currency, CurrencyAmount, ETHER, TOMO, Token, TokenAmount, WETH } from 'insswap-sdk'
 import { IsTomoChain } from '.'
 
 export function wrappedCurrency(currency: Currency | undefined, chainId: ChainId | undefined): Token | undefined {

@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@luaswap/sdk'
+import { Trade, TradeType } from 'insswap-sdk'
 import React, { useContext, useMemo } from 'react'
 import { ArrowDown, AlertTriangle } from 'react-feather'
 import { Text } from 'rebass'

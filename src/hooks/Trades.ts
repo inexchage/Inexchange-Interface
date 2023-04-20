@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Pair, Token, Trade } from '@luaswap/sdk'
+import { Currency, CurrencyAmount, Pair, Token, Trade } from 'insswap-sdk'
 import flatMap from 'lodash.flatmap'
 import { useMemo } from 'react'
 

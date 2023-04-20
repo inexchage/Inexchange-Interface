@@ -1,5 +1,5 @@
 import { UNI } from './../../constants/index'
-import { TokenAmount } from '@luaswap/sdk'
+import { TokenAmount } from 'insswap-sdk'
 import { isAddress } from 'ethers/lib/utils'
 import { useGovernanceContract, useUniContract } from '../../hooks/useContract'
 import { useSingleCallResult, useSingleContractMultipleData } from '../multicall/hooks'

@@ -1,4 +1,4 @@
-import { Currency, Token, ChainId } from '@luaswap/sdk'
+import { Currency, Token, ChainId } from 'insswap-sdk'
 import { IsTomoChain, getNativeToken, getLogoNativeToken } from '../../utils'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'

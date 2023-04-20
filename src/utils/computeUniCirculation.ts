@@ -1,4 +1,4 @@
-import { JSBI, Token, TokenAmount } from '@luaswap/sdk'
+import { JSBI, Token, TokenAmount } from 'insswap-sdk'
 import { BigNumber } from 'ethers'
 import { STAKING_GENESIS } from '../state/stake/hooks'
 

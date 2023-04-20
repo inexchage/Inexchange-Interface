@@ -2,7 +2,7 @@ import { useState, useLayoutEffect } from 'react'
 import { shade } from 'polished'
 import Vibrant from 'node-vibrant'
 import { hex } from 'wcag-contrast'
-import { Token, ChainId } from '@luaswap/sdk'
+import { Token, ChainId } from 'insswap-sdk'
 import { IsTomoChain } from '../utils'
 
 const commit_hash = '7ab366e49618c07ec8b9c39c1f93c4e58e1429fb'

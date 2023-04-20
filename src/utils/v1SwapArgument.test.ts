@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, Percent, Route, TokenAmount, Trade } from '@luaswap/sdk'
+import { CurrencyAmount, ETHER, Percent, Route, TokenAmount, Trade } from 'insswap-sdk'
 import { DAI, wUSDC } from '../constants'
 import { MockV1Pair } from '../data/V1'
 import v1SwapArguments from './v1SwapArguments'

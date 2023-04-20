@@ -1,4 +1,4 @@
-import { Currency, JSBI, TokenAmount } from '@luaswap/sdk'
+import { Currency, JSBI, TokenAmount } from 'insswap-sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 import { Plus } from 'react-feather'
 import { Text } from 'rebass'

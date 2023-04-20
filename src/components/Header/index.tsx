@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Text } from 'rebass'
-import { ChainId } from '@luaswap/sdk'
+import { ChainId } from 'insswap-sdk'
 import styled from 'styled-components'
 
 import { useWindowSize } from '../../hooks/useWindowSize'
@@ -176,7 +176,9 @@ const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
   [ChainId.KOVAN]: 'Kovan',
   [ChainId.TOMOCHAIN_MAINNET]: 'TomoChain',
   [ChainId.TOMOCHAIN_DEVNET]: 'TomoDevnet',
-  [ChainId.TOMOCHAIN_TESTNET]: 'TomoTestnet'
+  [ChainId.TOMOCHAIN_TESTNET]: 'TomoTestnet',
+  [ChainId.ZKSYNC_MAINNET]: 'zkSync',
+  [ChainId.ZKSYNC_TESTNET]: 'zkSyncTestnet'
 }
 
 export default function Header() {

@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, TOMO, JSBI } from '@luaswap/sdk'
+import { CurrencyAmount, ETHER, TOMO, JSBI } from 'insswap-sdk'
 import { MIN_ETH, MIN_TOMO } from '../constants'
 
 /**

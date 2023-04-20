@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import styled, { ThemeContext } from 'styled-components'
 import axios from 'axios'
 import BigNumber from 'bignumber.js'
-import { TokenAmount } from '@luaswap/sdk'
+import { TokenAmount } from 'insswap-sdk'
 
 import { useActiveWeb3React } from '../../hooks'
 import { useLuaTokenContract } from '../../hooks/useContract'

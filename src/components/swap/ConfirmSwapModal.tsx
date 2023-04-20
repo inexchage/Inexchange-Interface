@@ -1,4 +1,4 @@
-import { currencyEquals, Trade } from '@luaswap/sdk'
+import { currencyEquals, Trade } from 'insswap-sdk'
 import React, { useCallback, useMemo } from 'react'
 import TransactionConfirmationModal, {
   ConfirmationModalContent,

@@ -1,5 +1,5 @@
 import { UNI } from './../../constants/index'
-import { Currency, CurrencyAmount, JSBI, Token, TokenAmount } from '@luaswap/sdk'
+import { Currency, CurrencyAmount, JSBI, Token, TokenAmount } from 'insswap-sdk'
 import { useMemo } from 'react'
 import ERC20_INTERFACE from '../../constants/abis/erc20'
 import { useAllTokens } from '../../hooks/Tokens'

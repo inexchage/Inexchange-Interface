@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@luaswap/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from 'insswap-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { injected, walletconnect, walletlink } from '../connectors' // remove portis, fortmatic
@@ -7,6 +7,9 @@ export const FACTORY_ADDRESS = '0x28c79368257CD71A122409330ad2bEBA7277a396'
 export const ROUTER_ADDRESS = '0x1d5C6F1607A171Ad52EFB270121331b3039dD83e'
 // Tomo router address testnet: 0x6f7425954a609bc4f585A13664c414D543B676d8
 export const TOMO_ROUTER_ADDRESS = '0x0b792a01Fd3E8b3e23aaaA28561c3E774A82AA7b'
+
+// ZKTESTNET router address 
+export const ZKTESTNET_ROUTER_ADDRESS = '0xD807Ba9d1bad893D5c2C23d90757dd17Eb463CC0'
 
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 
@@ -81,7 +84,9 @@ export const UNI: { [chainId in ChainId]: Token } = {
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   [ChainId.TOMOCHAIN_MAINNET]: new Token(ChainId.TOMOCHAIN_MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   [ChainId.TOMOCHAIN_DEVNET]: new Token(ChainId.TOMOCHAIN_DEVNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.TOMOCHAIN_TESTNET]: new Token(ChainId.TOMOCHAIN_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap')
+  [ChainId.TOMOCHAIN_TESTNET]: new Token(ChainId.TOMOCHAIN_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
+  [ChainId.ZKSYNC_MAINNET]: new Token(ChainId.ZKSYNC_MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
+  [ChainId.ZKSYNC_TESTNET]: new Token(ChainId.ZKSYNC_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap')
 }
 
 // TODO: specify merkle distributor for mainnet
@@ -97,7 +102,9 @@ const WETH_ONLY: ChainTokenList = {
   [ChainId.KOVAN]: [WETH[ChainId.KOVAN]],
   [ChainId.TOMOCHAIN_DEVNET]: [WETH[ChainId.TOMOCHAIN_DEVNET]],
   [ChainId.TOMOCHAIN_TESTNET]: [WETH[ChainId.TOMOCHAIN_TESTNET]],
-  [ChainId.TOMOCHAIN_MAINNET]: [WETH[ChainId.TOMOCHAIN_MAINNET]]
+  [ChainId.TOMOCHAIN_MAINNET]: [WETH[ChainId.TOMOCHAIN_MAINNET]],
+  [ChainId.ZKSYNC_MAINNET]: [WETH[ChainId.ZKSYNC_MAINNET]],
+  [ChainId.ZKSYNC_TESTNET]: [WETH[ChainId.ZKSYNC_TESTNET]]
 }
 
 // used to construct intermediary pairs for trading
@@ -206,7 +213,9 @@ export const NETWORK_SCAN: { [chainId in ChainId]: string } = {
   42: 'View Etherscan',
   88: 'View TomoScan',
   89: 'View TomoScan',
-  99: 'View TomoScan'
+  99: 'View TomoScan',
+  280: 'View ZKSYNC',
+  324: 'View ZKSYNC'
 }
 
 export const TokenTextSupport: { [chainId in ChainId]: string } = {
@@ -217,7 +226,9 @@ export const TokenTextSupport: { [chainId in ChainId]: string } = {
   42: 'ETH',
   88: 'TOMO',
   89: 'TOMO',
-  99: 'TOMO'
+  99: 'TOMO',
+  280: 'ETH',
+  324: 'ETH'
 }
 
 export const NetworkContextName = 'NETWORK'

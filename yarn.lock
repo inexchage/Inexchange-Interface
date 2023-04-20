@@ -2077,19 +2077,6 @@
     "@json-rpc-tools/types" "^1.7.6"
     "@pedrouid/environment" "^1.0.1"
 
-"@luaswap/sdk@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@luaswap/sdk/-/sdk-2.1.0.tgz#a3cd9e9879c02edc1465afab9549fac53a3286f2"
-  integrity sha512-7ocfp5imHk3t4XTVe1s/8yJGmbhW60uoQdywkcFkUAA7K0zvzqaR7BvWYv+ELZJgxaHbkz+z94raTVpLN0t/kA==
-  dependencies:
-    "@uniswap/v2-core" "^1.0.0"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.1"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-    toformat "^2.0.0"
-
 "@metamask/safe-event-emitter@2.0.0", "@metamask/safe-event-emitter@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@metamask/safe-event-emitter/-/safe-event-emitter-2.0.0.tgz#af577b477c683fad17c619a78208cede06f9605c"
@@ -9330,6 +9317,19 @@ inquirer@^7.0.0:
     string-width "^4.1.0"
     strip-ansi "^6.0.0"
     through "^2.3.6"
+
+insswap-sdk@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/insswap-sdk/-/insswap-sdk-2.0.1.tgz#8ab5f046aeb315aec7b99fb81824aedc9df9ada0"
+  integrity sha512-lwvD7XGmj54oSFIJHej+ECahja2pt1KekKFbcT2OiI4TX3c8QX8GYlMlfyVcfyKSvuOV9lVs4HJeePITZyI2rw==
+  dependencies:
+    "@uniswap/v2-core" "^1.0.0"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.1"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+    toformat "^2.0.0"
 
 inter-ui@^3.13.1:
   version "3.19.3"

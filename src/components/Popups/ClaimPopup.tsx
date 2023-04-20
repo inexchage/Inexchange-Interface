@@ -1,4 +1,4 @@
-import { TokenAmount } from '@luaswap/sdk'
+import { TokenAmount } from 'insswap-sdk'
 import React, { useEffect } from 'react'
 import { X } from 'react-feather'
 import styled, { keyframes } from 'styled-components'

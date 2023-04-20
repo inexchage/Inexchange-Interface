@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Contract } from '@ethersproject/contracts'
-import { ChainId } from '@luaswap/sdk'
+import { ChainId } from 'insswap-sdk'
 import { IsTomoChain } from '../utils'
 
 import { TOMO_SUPPORTED_POOL, SUPPORTED_POOL, FARMING_ADDRESS, TOMO_FARMING_ADDRESS } from '../constants/abis/farming'

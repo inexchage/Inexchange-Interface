@@ -1,4 +1,4 @@
-import { JSBI, Pair, Percent, TokenAmount, ChainId, Token } from '@luaswap/sdk'
+import { JSBI, Pair, Percent, TokenAmount, ChainId, Token } from 'insswap-sdk'
 import { darken } from 'polished'
 import React, { useState, useEffect } from 'react'
 import { ChevronDown, ChevronUp } from 'react-feather'

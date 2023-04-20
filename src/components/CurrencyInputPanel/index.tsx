@@ -1,4 +1,4 @@
-import { Currency, Pair } from '@luaswap/sdk'
+import { Currency, Pair } from 'insswap-sdk'
 import React, { useState, useContext, useCallback } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import { darken } from 'polished'

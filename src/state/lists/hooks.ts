@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@luaswap/sdk'
+import { ChainId, Token } from 'insswap-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
@@ -38,7 +38,9 @@ const EMPTY_LIST: TokenAddressMap = {
   [ChainId.MAINNET]: {},
   [ChainId.TOMOCHAIN_DEVNET]: {},
   [ChainId.TOMOCHAIN_TESTNET]: {},
-  [ChainId.TOMOCHAIN_MAINNET]: {}
+  [ChainId.TOMOCHAIN_MAINNET]: {},
+  [ChainId.ZKSYNC_MAINNET]: {},
+  [ChainId.ZKSYNC_TESTNET]: {}
 }
 
 const listCache: WeakMap<TokenList, TokenAddressMap> | null =

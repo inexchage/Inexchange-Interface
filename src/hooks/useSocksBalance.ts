@@ -1,4 +1,4 @@
-import { JSBI } from '@luaswap/sdk'
+import { JSBI } from 'insswap-sdk'
 import { useMemo } from 'react'
 import { NEVER_RELOAD, useSingleCallResult } from '../state/multicall/hooks'
 import { useActiveWeb3React } from './index'

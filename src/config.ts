@@ -1,4 +1,4 @@
-import { ChainId } from '@luaswap/sdk'
+import { ChainId } from 'insswap-sdk'
 
 export default {
   rpc: 'https://wallet.tomochain.com/api/luaswap/rpc',
@@ -16,7 +16,9 @@ export const START_REWARD_AT_BLOCK: { [chainId in ChainId]: number } = {
   42: 10950600,
   88: 32787447,
   89: 32787447,
-  99: 32787447
+  99: 32787447,
+  280: 4510323,
+  324: 1879403
 }
 
 export const NUMBER_BLOCKS_PER_YEAR: { [chainId in ChainId]: number } = {
@@ -27,7 +29,9 @@ export const NUMBER_BLOCKS_PER_YEAR: { [chainId in ChainId]: number } = {
   42: 2425000,
   88: 12614400,
   89: 12614400,
-  99: 12614400
+  99: 12614400,
+  280: 2425000,
+  324: 2425000
 }
 
 export const RPC_URL: { [chainId in ChainId]: string } = {
@@ -38,7 +42,9 @@ export const RPC_URL: { [chainId in ChainId]: string } = {
   42: '',
   88: 'https://rpc.tomochain.com',
   89: '',
-  99: ''
+  99: '',
+  280: 'https://testnet.era.zksync.dev',
+  324: 'https://mainnet.era.zksync.io'
 }
 
 export const API_URL: { [chainId in ChainId]: string } = {
@@ -49,7 +55,9 @@ export const API_URL: { [chainId in ChainId]: string } = {
   42: '',
   88: 'https://wallet.tomochain.com/api/luaswap/tomochain',
   89: '',
-  99: ''
+  99: '',
+  280: '',
+  324: ''
 }
 
 export const LUA_CONTRACT: { [chainId in ChainId]: string } = {
@@ -60,5 +68,7 @@ export const LUA_CONTRACT: { [chainId in ChainId]: string } = {
   42: '',
   88: '0x7262fa193e9590B2E075c3C16170f3f2f32F5C74',
   89: '',
-  99: ''
+  99: '',
+  280: '',
+  324: ''
 }

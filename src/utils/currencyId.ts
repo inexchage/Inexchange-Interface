@@ -1,4 +1,4 @@
-import { Currency, ETHER, TOMO, Token } from '@luaswap/sdk'
+import { Currency, ETHER, TOMO, Token } from 'insswap-sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'ETH'

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, ETHER, TOMO, JSBI, Pair, Percent, Price, TokenAmount } from '@luaswap/sdk'
+import { Currency, CurrencyAmount, ETHER, TOMO, JSBI, Pair, Percent, Price, TokenAmount } from 'insswap-sdk'
 import { useCallback, useMemo } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { PairState, usePair } from '../../data/Reserves'

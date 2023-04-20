@@ -1,4 +1,4 @@
-import { Currency, JSBI, TokenAmount, TOMO } from '@luaswap/sdk'
+import { Currency, JSBI, TokenAmount, TOMO } from 'insswap-sdk'
 import BigNumber from 'bignumber.js'
 import React, { useCallback, useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'

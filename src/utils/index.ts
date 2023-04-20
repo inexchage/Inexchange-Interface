@@ -5,7 +5,7 @@ import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 import { BigNumber } from '@ethersproject/bignumber'
 import { abi as IUniswapV2Router02ABI } from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'
 import { ROUTER_ADDRESS, TOMO_ROUTER_ADDRESS } from '../constants'
-import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER, TOMO } from '@luaswap/sdk'
+import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER, TOMO } from 'insswap-sdk'
 import { TokenAddressMap } from '../state/lists/hooks'
 import EthereumLogo from '../assets/images/ethereum-logo.png'
 import TomoLogo from '../assets/images/tomo-logo.png'
@@ -27,7 +27,9 @@ const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
   42: 'kovan.',
   88: 'scan.',
   89: 'scan.testnet.',
-  99: 'scan.devnet.'
+  99: 'scan.devnet.',
+  280: 'scan.testnet.',
+  324: 'scan.devnet.'
 }
 const NETWORK_DOMAIN: { [chainId in ChainId]: string } = {
   1: 'etherscan.io',
@@ -37,7 +39,9 @@ const NETWORK_DOMAIN: { [chainId in ChainId]: string } = {
   42: 'etherscan.io',
   88: 'tomochain.com',
   89: 'tomochain.com',
-  99: 'tomochain.com'
+  99: 'tomochain.com',
+  280: 'tomochain.com',
+  324: 'tomochain.com'
 }
 const BLOCK_LINK: { [chainId in ChainId]: string } = {
   1: 'block',
@@ -47,7 +51,9 @@ const BLOCK_LINK: { [chainId in ChainId]: string } = {
   42: 'block',
   88: 'blocks',
   89: 'blocks',
-  99: 'blocks'
+  99: 'blocks',
+  280: 'blocks',
+  324: 'blocks'
 }
 const TOKEN: { [chainId in ChainId]: string } = {
   1: 'token',
@@ -57,7 +63,9 @@ const TOKEN: { [chainId in ChainId]: string } = {
   42: 'token',
   88: 'tokens',
   89: 'tokens',
-  99: 'tokens'
+  99: 'tokens',
+  280: 'tokens',
+  324: 'tokens'
 }
 
 export function getEtherscanLink(

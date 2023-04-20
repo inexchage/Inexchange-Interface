@@ -5,7 +5,7 @@ import { Contract } from 'web3-eth-contract'
 import { AbiItem } from 'web3-utils'
 import ERC20ABI from '../constants/abi/ERC20.json'
 import config, { RPC_URL } from '../config'
-import { ChainId } from '@luaswap/sdk'
+import { ChainId } from 'insswap-sdk'
 
 export const getContract = (provider: any, address: string) => {
   const web3 = new Web3((provider as any) || config.rpc)

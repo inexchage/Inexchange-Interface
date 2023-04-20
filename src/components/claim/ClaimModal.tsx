@@ -1,4 +1,4 @@
-import { JSBI, TokenAmount } from '@luaswap/sdk'
+import { JSBI, TokenAmount } from 'insswap-sdk'
 import { isAddress } from 'ethers/lib/utils'
 import React, { useEffect, useState } from 'react'
 import { Text } from 'rebass'
