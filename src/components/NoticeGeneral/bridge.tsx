@@ -15,8 +15,8 @@ export default function NoticeTomoBridge() {
         <a style={{ fontSize: '15px', color: '#ecb34b' }} href="https://bridge.tomochain.com/" target="true">
           Bring
         </a>{' '}
-        any ERC20 token into the TomoChain ecosystem & integrate with LuaSwap seamlessly. Take advantage of near-zero
-        gas fees & super fast trades!
+        any ERC20 token into the Inexchange ecosystem. 
+        Take advantage of near-zero as fees & super fast trades!
       </StyledInfo>
     </>
   )

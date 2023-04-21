@@ -11,6 +11,9 @@ export const TOMO_ROUTER_ADDRESS = '0x0b792a01Fd3E8b3e23aaaA28561c3E774A82AA7b'
 // ZKTESTNET router address 
 export const ZKTESTNET_ROUTER_ADDRESS = '0xD807Ba9d1bad893D5c2C23d90757dd17Eb463CC0'
 
+// OKTESTNET router address 
+export const OKTESTNET_ROUTER_ADDRESS = '0x30FE4f15Bdac26901df48656a88fd6f424a614BB'
+
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 
 // a list of tokens by chain
@@ -86,7 +89,8 @@ export const UNI: { [chainId in ChainId]: Token } = {
   [ChainId.TOMOCHAIN_DEVNET]: new Token(ChainId.TOMOCHAIN_DEVNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   [ChainId.TOMOCHAIN_TESTNET]: new Token(ChainId.TOMOCHAIN_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   [ChainId.ZKSYNC_MAINNET]: new Token(ChainId.ZKSYNC_MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.ZKSYNC_TESTNET]: new Token(ChainId.ZKSYNC_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap')
+  [ChainId.ZKSYNC_TESTNET]: new Token(ChainId.ZKSYNC_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
+  [ChainId.OKBC_TESTNET]: new Token(ChainId.OKBC_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap')
 }
 
 // TODO: specify merkle distributor for mainnet
@@ -104,7 +108,8 @@ const WETH_ONLY: ChainTokenList = {
   [ChainId.TOMOCHAIN_TESTNET]: [WETH[ChainId.TOMOCHAIN_TESTNET]],
   [ChainId.TOMOCHAIN_MAINNET]: [WETH[ChainId.TOMOCHAIN_MAINNET]],
   [ChainId.ZKSYNC_MAINNET]: [WETH[ChainId.ZKSYNC_MAINNET]],
-  [ChainId.ZKSYNC_TESTNET]: [WETH[ChainId.ZKSYNC_TESTNET]]
+  [ChainId.ZKSYNC_TESTNET]: [WETH[ChainId.ZKSYNC_TESTNET]],
+  [ChainId.OKBC_TESTNET]: [WETH[ChainId.OKBC_TESTNET]]
 }
 
 // used to construct intermediary pairs for trading
@@ -215,7 +220,8 @@ export const NETWORK_SCAN: { [chainId in ChainId]: string } = {
   89: 'View TomoScan',
   99: 'View TomoScan',
   280: 'View ZKSYNC',
-  324: 'View ZKSYNC'
+  324: 'View ZKSYNC',
+  195: 'View OKBC'
 }
 
 export const TokenTextSupport: { [chainId in ChainId]: string } = {
@@ -228,7 +234,8 @@ export const TokenTextSupport: { [chainId in ChainId]: string } = {
   89: 'TOMO',
   99: 'TOMO',
   280: 'ETH',
-  324: 'ETH'
+  324: 'ETH',
+  195: 'ETH'
 }
 
 export const NetworkContextName = 'NETWORK'

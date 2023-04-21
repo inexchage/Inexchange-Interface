@@ -40,7 +40,8 @@ const EMPTY_LIST: TokenAddressMap = {
   [ChainId.TOMOCHAIN_TESTNET]: {},
   [ChainId.TOMOCHAIN_MAINNET]: {},
   [ChainId.ZKSYNC_MAINNET]: {},
-  [ChainId.ZKSYNC_TESTNET]: {}
+  [ChainId.ZKSYNC_TESTNET]: {},
+  [ChainId.OKBC_TESTNET]: {}
 }
 
 const listCache: WeakMap<TokenList, TokenAddressMap> | null =

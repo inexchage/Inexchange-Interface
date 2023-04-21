@@ -1,8 +1,11 @@
 import { ChainId } from 'insswap-sdk'
 
 export default {
-  rpc: 'https://wallet.tomochain.com/api/luaswap/rpc',
+  //rpc: 'https://wallet.tomochain.com/api/luaswap/rpc',
+  rpc: 'https://mainnet.era.zksync.io',
   rpcTomochain: 'https://rpc.tomochain.com',
+  rpcZk: 'https://mainnet.era.zksync.io',
+  rpcZkTestnet: 'https://testnet.era.zksync.dev',
   chainId: 1,
   apiETH: 'https://wallet.tomochain.com/api/luaswap',
   apiTOMO: 'https://wallet.tomochain.com/api/luaswap/tomochain'
@@ -18,7 +21,8 @@ export const START_REWARD_AT_BLOCK: { [chainId in ChainId]: number } = {
   89: 32787447,
   99: 32787447,
   280: 4510323,
-  324: 1879403
+  324: 1879403,
+  195: 10950600
 }
 
 export const NUMBER_BLOCKS_PER_YEAR: { [chainId in ChainId]: number } = {
@@ -31,7 +35,8 @@ export const NUMBER_BLOCKS_PER_YEAR: { [chainId in ChainId]: number } = {
   89: 12614400,
   99: 12614400,
   280: 2425000,
-  324: 2425000
+  324: 2425000,
+  195: 2425000
 }
 
 export const RPC_URL: { [chainId in ChainId]: string } = {
@@ -44,7 +49,8 @@ export const RPC_URL: { [chainId in ChainId]: string } = {
   89: '',
   99: '',
   280: 'https://testnet.era.zksync.dev',
-  324: 'https://mainnet.era.zksync.io'
+  324: 'https://mainnet.era.zksync.io',
+  195: 'https://okbtestrpc.okbchain.org'
 }
 
 export const API_URL: { [chainId in ChainId]: string } = {
@@ -57,7 +63,8 @@ export const API_URL: { [chainId in ChainId]: string } = {
   89: '',
   99: '',
   280: '',
-  324: ''
+  324: '',
+  195: ''
 }
 
 export const LUA_CONTRACT: { [chainId in ChainId]: string } = {
@@ -70,5 +77,6 @@ export const LUA_CONTRACT: { [chainId in ChainId]: string } = {
   89: '',
   99: '',
   280: '',
-  324: ''
+  324: '',
+  195: ''
 }

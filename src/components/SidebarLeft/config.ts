@@ -16,19 +16,8 @@ const config = [
     href: '/farming'
   },
   {
-    key: 'luasafe',
-    label: 'LuaSafe',
-    icon: 'ArrowRenew',
-    href: '/lua-safe'
-  },
-  {
-    label: 'Limit Order',
-    icon: 'Groups',
-    href: 'http://orderbook.luaswap.org/'
-  },
-  {
     key: 'ido',
-    label: 'LuaStarter',
+    label: 'Launchpad',
     icon: 'IfoIcon',
     href: 'http://ido.luaswap.org/'
   },

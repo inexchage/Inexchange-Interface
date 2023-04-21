@@ -9318,10 +9318,10 @@ inquirer@^7.0.0:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
-insswap-sdk@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/insswap-sdk/-/insswap-sdk-2.0.1.tgz#8ab5f046aeb315aec7b99fb81824aedc9df9ada0"
-  integrity sha512-lwvD7XGmj54oSFIJHej+ECahja2pt1KekKFbcT2OiI4TX3c8QX8GYlMlfyVcfyKSvuOV9lVs4HJeePITZyI2rw==
+insswap-sdk@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/insswap-sdk/-/insswap-sdk-2.0.4.tgz#134863dfd0b8a21ea7af69d5c676b22bc858b74e"
+  integrity sha512-ztrpQQLLLFKEnBDTTzNjCZx5GOx46M/KP8tHVLiGb9N4SwuctUdwm70DI+CVXy37FdaomlC7EZ5iyGplymgz9A==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"

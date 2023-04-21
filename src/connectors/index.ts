@@ -27,12 +27,12 @@ export function getNetworkLibrary(): Web3Provider {
 }
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [1, 3, 4, 5, 42, 88, 89, 99, 280, 324]
+  supportedChainIds: [1, 3, 4, 5, 42, 88, 89, 99, 280, 324, 195]
 })
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
-  supportedChainIds: [1, 3, 4, 5, 42, 88, 89, 99, 280, 324],
+  supportedChainIds: [1, 3, 4, 5, 42, 88, 89, 99, 280, 324, 195],
   rpc: { 1: NETWORK_URL, 88: 'https://rpc.tomochain.com' },
   qrcode: true
 })

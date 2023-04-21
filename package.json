@@ -118,7 +118,7 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "insswap-sdk": "^2.0.1",
+    "insswap-sdk": "^2.0.4",
     "axios": "^0.21.1",
     "bignumber.js": "^9.0.1",
     "react-countdown": "^2.3.1",

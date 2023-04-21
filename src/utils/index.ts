@@ -29,7 +29,8 @@ const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
   89: 'scan.testnet.',
   99: 'scan.devnet.',
   280: 'scan.testnet.',
-  324: 'scan.devnet.'
+  324: 'scan.devnet.',
+  195: 'OKBC'
 }
 const NETWORK_DOMAIN: { [chainId in ChainId]: string } = {
   1: 'etherscan.io',
@@ -41,7 +42,8 @@ const NETWORK_DOMAIN: { [chainId in ChainId]: string } = {
   89: 'tomochain.com',
   99: 'tomochain.com',
   280: 'tomochain.com',
-  324: 'tomochain.com'
+  324: 'tomochain.com',
+  195: 'oklink.com/cn/okbc-test'
 }
 const BLOCK_LINK: { [chainId in ChainId]: string } = {
   1: 'block',
@@ -53,7 +55,8 @@ const BLOCK_LINK: { [chainId in ChainId]: string } = {
   89: 'blocks',
   99: 'blocks',
   280: 'blocks',
-  324: 'blocks'
+  324: 'blocks',
+  195: 'blocks'
 }
 const TOKEN: { [chainId in ChainId]: string } = {
   1: 'token',
@@ -65,7 +68,8 @@ const TOKEN: { [chainId in ChainId]: string } = {
   89: 'tokens',
   99: 'tokens',
   280: 'tokens',
-  324: 'tokens'
+  324: 'tokens',
+  195: 'tokens'
 }
 
 export function getEtherscanLink(

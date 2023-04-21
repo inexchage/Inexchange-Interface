@@ -6,7 +6,7 @@ import { abi as MERKLE_DISTRIBUTOR_ABI } from '@uniswap/merkle-distributor/build
 import { ChainId, WETH } from 'insswap-sdk'
 import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 import { useMemo } from 'react'
-import { GOVERNANCE_ADDRESS, MERKLE_DISTRIBUTOR_ADDRESS, UNI, TOMO_ROUTER_ADDRESS } from '../constants'
+import { GOVERNANCE_ADDRESS, MERKLE_DISTRIBUTOR_ADDRESS, UNI, TOMO_ROUTER_ADDRESS, ZKTESTNET_ROUTER_ADDRESS, OKTESTNET_ROUTER_ADDRESS } from '../constants'
 import {
   ARGENT_WALLET_DETECTOR_ABI,
   ARGENT_WALLET_DETECTOR_MAINNET_ADDRESS
@@ -27,6 +27,8 @@ import { useActiveWeb3React } from './index'
 import { FARMING_ABI, FARMING_ADDRESS, TOMO_FARMING_ADDRESS } from '../constants/abis/farming'
 import LUA_ABI from '../constants/abis/lua'
 import TOMO_ROUTER_ABI from '../constants/abis/tomo-router.json'
+import ZK_ROUTER_ABI from '../constants/abis/zk-router.json'
+import OKBC_ROUTER_ABI from '../constants/abis/okbc-router.json'
 
 // returns null on errors
 function useContract(address: string | undefined, ABI: any, withSignerIfPossible = true): Contract | null {
@@ -152,4 +154,12 @@ export function useFarmingContract(): Contract | null {
 
 export function useTomoRouterContract(): Contract | null {
   return useContract(TOMO_ROUTER_ADDRESS, TOMO_ROUTER_ABI, false)
+}
+
+export function useZKRouterContract(): Contract | null {
+  return useContract(ZKTESTNET_ROUTER_ADDRESS, ZK_ROUTER_ABI, false)
+}
+
+export function useOKBCRouterContract(): Contract | null {
+  return useContract(OKTESTNET_ROUTER_ADDRESS, OKBC_ROUTER_ABI, false)
 }

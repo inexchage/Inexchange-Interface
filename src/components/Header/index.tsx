@@ -178,7 +178,8 @@ const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
   [ChainId.TOMOCHAIN_DEVNET]: 'TomoDevnet',
   [ChainId.TOMOCHAIN_TESTNET]: 'TomoTestnet',
   [ChainId.ZKSYNC_MAINNET]: 'zkSync',
-  [ChainId.ZKSYNC_TESTNET]: 'zkSyncTestnet'
+  [ChainId.ZKSYNC_TESTNET]: 'zkSyncTestnet',
+  [ChainId.OKBC_TESTNET]: 'OKBCTestnet'
 }
 
 export default function Header() {
@@ -216,7 +217,7 @@ export default function Header() {
         <Title href=".">
           <UniIcon>
             <img width={'40px'} src={Logo} alt="logo" />
-            <LogoText>LuaSwap</LogoText>
+            <LogoText>INExchange</LogoText>
           </UniIcon>
         </Title>
       </HeaderRow>
