@@ -31,7 +31,7 @@ export const SectionBreak = styled.div`
 
 export const BottomGrouping = styled.div`
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: ${({ theme }) => theme.bg3};
 `
 
