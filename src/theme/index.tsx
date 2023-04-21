@@ -60,11 +60,11 @@ export function colors(): Colors {
     advancedBG: 'rgba(0,0,0,0.1)',
 
     //primary colors
-    primary1: '#FABC44',
+    primary1: '#00b0ff',
     primary2: '#af7c31',
     primary3: '#4D8FEA',
     primary4: '#376bad70',
-    primary5: '#af7c31',
+    primary5: '#00b0ff',
 
     // color text
     primaryText1: '#fff', // #6da8ff
