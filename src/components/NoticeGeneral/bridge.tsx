@@ -11,8 +11,8 @@ const StyledInfo = styled.div`
 export default function NoticeTomoBridge() {
   return (
     <>
-      <StyledInfo style={{ color: '#00a5f0' }}>
-        <a style={{ fontSize: '15px', color: '#00b0ff' }} href="https://bridge.tomochain.com/" target="true">
+      <StyledInfo style={{ color: '#c3a56e' }}>
+        <a style={{ fontSize: '15px', color: '#ecb34b' }} href="https://bridge.tomochain.com/" target="true">
           Bring
         </a>{' '}
         any ERC20 token into the Inexchange ecosystem. 
