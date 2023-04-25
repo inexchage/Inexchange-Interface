@@ -21,57 +21,58 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-// Base Token on TomoChain NetWork
+// Base Token on OKBChain TEST NetWork
 // TESTNET
-export const TUSDT = new Token(
-  ChainId.TOMOCHAIN_TESTNET,
-  '0xc7ecCc9da22aBAAf9cfe311BFD9a55437eA05c2c',
-  6,
+export const OUSDT = new Token(
+  ChainId.OKBC_TESTNET,
+  '0x66FB1593FD4ceB3D268A4011e23522e3463d1d68',
+  18,
   'USDT',
   'Tether USD'
 )
-export const TBTC = new Token(
-  ChainId.TOMOCHAIN_TESTNET,
-  '0x11c2cAF973db997b8a9b5689b33962E1AedEA968',
-  8,
+export const OBTC = new Token(
+  ChainId.OKBC_TESTNET,
+  '0xBCE20487A43684DeD233943b6E61616a39fdB597',
+  18,
   'BTC',
-  'Wrapped BTC'
+  'BTC'
+)
+export const OUSDC = new Token(
+  ChainId.OKBC_TESTNET, 
+  '0xe715d7d229e6bcABa2aA8892dC58B84198cfFAdD',
+  18, 
+  'USDC', 
+  'USDC'
+)
+
+export const OETH = new Token(
+  ChainId.OKBC_TESTNET,
+  '0x8f0F1c9e98C4e2c3f15F722A3bD833868Ef60f6E',
+  18,
+  'ETH',
+  'ETH'
+)
+export const OLIB = new Token(
+  ChainId.OKBC_TESTNET,
+  '0x1a24E42bC4f3897B66deF54C86681bAaCE3485C2',
+  18,
+  'LIB',
+  'LIB'
 )
 // MAINNET
+/*
 export const MLUA = new Token(
   ChainId.TOMOCHAIN_MAINNET,
   '0x7262fa193e9590b2e075c3c16170f3f2f32f5c74',
   18,
   'LUA',
   'LuaToken'
-)
-export const MBTC = new Token(
-  ChainId.TOMOCHAIN_MAINNET,
-  '0xAE44807D8A9CE4B30146437474Ed6fAAAFa1B809',
-  8,
-  'BTC',
-  'Wrapped BTC'
-)
-export const METH = new Token(
-  ChainId.TOMOCHAIN_MAINNET,
-  '0x2EAA73Bd0db20c64f53fEbeA7b5F5E5Bccc7fb8b',
-  18,
-  'ETH',
-  'Wrapped ETH'
-)
-export const MUSDT = new Token(
-  ChainId.TOMOCHAIN_MAINNET,
-  '0x381B31409e4D220919B2cFF012ED94d70135A59e',
-  6,
-  'USDT',
-  'Wrapped Tether USD'
-)
+)*/
+
 // Base Token on ETH NetWork
 export const USDC = new Token(ChainId.MAINNET, '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 6, 'USDC', 'USD//C')
 export const USDT = new Token(ChainId.MAINNET, '0xdAC17F958D2ee523a2206206994597C13D831ec7', 6, 'USDT', 'Tether USD')
 export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599', 18, 'WBTC', 'Wrapped BTC')
-export const TOMOE = new Token(ChainId.MAINNET, '0x05D3606d5c81EB9b7B18530995eC9B29da05FaBa', 18, 'TOMOE', 'TomoChain')
-export const LUA = new Token(ChainId.MAINNET, '0xB1f66997A5760428D3a87D68b90BfE0aE64121cC', 18, 'LUA', 'LuaToken')
 
 // TODO this is only approximate, it's actually based on blocks
 export const PROPOSAL_LENGTH_IN_DAYS = 7
@@ -81,15 +82,6 @@ export const GOVERNANCE_ADDRESS = '0x5e4be8Bc9637f0EAA1A755019e06A68ce081D58F'
 const UNI_ADDRESS = '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984'
 export const UNI: { [chainId in ChainId]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.TOMOCHAIN_MAINNET]: new Token(ChainId.TOMOCHAIN_MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.TOMOCHAIN_DEVNET]: new Token(ChainId.TOMOCHAIN_DEVNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.TOMOCHAIN_TESTNET]: new Token(ChainId.TOMOCHAIN_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.ZKSYNC_MAINNET]: new Token(ChainId.ZKSYNC_MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.ZKSYNC_TESTNET]: new Token(ChainId.ZKSYNC_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   [ChainId.OKBC_TESTNET]: new Token(ChainId.OKBC_TESTNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap')
 }
 
@@ -100,24 +92,14 @@ export const MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.ROPSTEN]: [WETH[ChainId.ROPSTEN]],
-  [ChainId.RINKEBY]: [WETH[ChainId.RINKEBY]],
-  [ChainId.GÖRLI]: [WETH[ChainId.GÖRLI]],
-  [ChainId.KOVAN]: [WETH[ChainId.KOVAN]],
-  [ChainId.TOMOCHAIN_DEVNET]: [WETH[ChainId.TOMOCHAIN_DEVNET]],
-  [ChainId.TOMOCHAIN_TESTNET]: [WETH[ChainId.TOMOCHAIN_TESTNET]],
-  [ChainId.TOMOCHAIN_MAINNET]: [WETH[ChainId.TOMOCHAIN_MAINNET]],
-  [ChainId.ZKSYNC_MAINNET]: [WETH[ChainId.ZKSYNC_MAINNET]],
-  [ChainId.ZKSYNC_TESTNET]: [WETH[ChainId.ZKSYNC_TESTNET]],
   [ChainId.OKBC_TESTNET]: [WETH[ChainId.OKBC_TESTNET]]
 }
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], LUA, USDC, USDT, TOMOE],
-  [ChainId.TOMOCHAIN_TESTNET]: [...WETH_ONLY[ChainId.TOMOCHAIN_TESTNET], TBTC, TUSDT],
-  [ChainId.TOMOCHAIN_MAINNET]: [...WETH_ONLY[ChainId.TOMOCHAIN_MAINNET], MLUA]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDC, USDT],
+  [ChainId.OKBC_TESTNET]: [...WETH_ONLY[ChainId.OKBC_TESTNET], USDC, USDT]
 }
 
 /**
@@ -126,30 +108,26 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
  */
 export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
   [ChainId.MAINNET]: {},
-  [ChainId.TOMOCHAIN_TESTNET]: {},
-  [ChainId.TOMOCHAIN_MAINNET]: {}
+  [ChainId.OKBC_TESTNET]: {}
 }
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [LUA, USDC, USDT, TOMOE],
-  [ChainId.TOMOCHAIN_TESTNET]: [TUSDT, TBTC],
-  [ChainId.TOMOCHAIN_MAINNET]: [MLUA, MUSDT, MBTC]
+  [ChainId.MAINNET]: [USDC, USDT],
+  [ChainId.OKBC_TESTNET]: [USDT, USDC]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], LUA, USDC, USDT, TOMOE],
-  [ChainId.TOMOCHAIN_TESTNET]: [...WETH_ONLY[ChainId.TOMOCHAIN_TESTNET], TUSDT, TBTC],
-  [ChainId.TOMOCHAIN_MAINNET]: [...WETH_ONLY[ChainId.TOMOCHAIN_MAINNET], MLUA, MUSDT, MBTC]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDC, USDT],
+  [ChainId.OKBC_TESTNET]: [...WETH_ONLY[ChainId.OKBC_TESTNET], OKB, USDT, USDC]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [[USDC, USDT]],
-  [ChainId.TOMOCHAIN_TESTNET]: [[TUSDT, TBTC]],
-  [ChainId.TOMOCHAIN_MAINNET]: [[MLUA, MUSDT]]
+  [ChainId.OKBC_TESTNET]: [[USDT, USDC]]
 }
 
 export interface WalletInfo {
@@ -212,29 +190,11 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
 
 export const NETWORK_SCAN: { [chainId in ChainId]: string } = {
   1: 'View Etherscan',
-  3: 'View Etherscan',
-  4: 'View Etherscan',
-  5: 'View Etherscan',
-  42: 'View Etherscan',
-  88: 'View TomoScan',
-  89: 'View TomoScan',
-  99: 'View TomoScan',
-  280: 'View ZKSYNC',
-  324: 'View ZKSYNC',
   195: 'View OKBC'
 }
 
 export const TokenTextSupport: { [chainId in ChainId]: string } = {
   1: 'ETH',
-  3: 'ETH',
-  4: 'ETH',
-  5: 'ETH',
-  42: 'ETH',
-  88: 'TOMO',
-  89: 'TOMO',
-  99: 'TOMO',
-  280: 'ETH',
-  324: 'ETH',
   195: 'ETH'
 }
 
@@ -275,17 +235,6 @@ export const STAKING_POOLS = [
     token2: 'xLUA',
     icon: 'https://luaswap.org/favicon.png',
     icon2: 'https://luaswap.org/favicon.png'
-  },
-  {
-    key: 'xlua-tomo',
-    name: 'xLUA - TOMO',
-    description: 'Deposit xLUA-TOMO LUA-V1 LP to earn TOMO',
-    longSymbol: 'xLUA-TOMO LUA-V1 LP',
-    shortSymbol: 'xLUA-TOMO',
-    token: 'xLUA',
-    token2: 'TOMO',
-    icon: 'https://luaswap.org/favicon.png',
-    icon2: 'https://wallet.tomochain.com/public/imgs/tomoiconwhite.png'
   }
 ]
 
@@ -293,25 +242,11 @@ type TokenIconProps = {
   [index: string]: string
 }
 export const TOKEN_ICONS: TokenIconProps = {
-  LUA: 'https://luaswap.org/favicon.png',
-  'LUA-V1': 'https://luaswap.org/favicon.png',
   USDC: 'https://s2.coinmarketcap.com/static/img/coins/128x128/3408.png',
-  TOMOE: 'https://wallet.tomochain.com/public/imgs/tomoiconwhite.png',
   ETH: 'https://s2.coinmarketcap.com/static/img/coins/128x128/1027.png',
   USDT: 'https://s2.coinmarketcap.com/static/img/coins/128x128/825.png',
-  FRONT: 'https://s2.coinmarketcap.com/static/img/coins/128x128/5893.png',
-  SUSHI: 'https://s2.coinmarketcap.com/static/img/coins/128x128/6758.png',
-  SRM: 'https://s2.coinmarketcap.com/static/img/coins/128x128/6187.png',
-  'FTX Token': 'https://s2.coinmarketcap.com/static/img/coins/128x128/4195.png',
-  KAI:
-    'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD9Ec3ff1f8be459Bb9369b4E79e9Ebcf7141C093/logo.png',
-  OM: 'https://s2.coinmarketcap.com/static/img/coins/128x128/6536.png',
   WBTC: 'https://s2.coinmarketcap.com/static/img/coins/128x128/1.png',
   UNI: 'https://s2.coinmarketcap.com/static/img/coins/128x128/7083.png',
   DAI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4943.png',
-  BAT: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1697.png',
-  RAMP: 'https://s2.coinmarketcap.com/static/img/coins/128x128/7463.png',
-  WTOMO: 'https://wallet.tomochain.com/public/imgs/tomoiconwhite.png',
-  BTC: 'https://s2.coinmarketcap.com/static/img/coins/128x128/1.png',
-  LIT: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3870.png'
+  BTC: 'https://s2.coinmarketcap.com/static/img/coins/128x128/1.png'
 }

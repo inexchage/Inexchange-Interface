@@ -27,13 +27,13 @@ export function getNetworkLibrary(): Web3Provider {
 }
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [1, 3, 4, 5, 42, 88, 89, 99, 280, 324, 195]
+  supportedChainIds: [1, 195]
 })
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
-  supportedChainIds: [1, 3, 4, 5, 42, 88, 89, 99, 280, 324, 195],
-  rpc: { 1: NETWORK_URL, 88: 'https://rpc.tomochain.com' },
+  supportedChainIds: [1, 195],
+  rpc: { 1: NETWORK_URL, 195: 'https://okbtestrpc.okbchain.org/' },
   qrcode: true
 })
 
@@ -52,6 +52,5 @@ export const portis = new PortisConnector({
 // mainnet only
 export const walletlink = new WalletLinkConnector({
   url: NETWORK_URL,
-  appName: 'LuaSwap',
-  appLogoUrl: 'https://raw.githubusercontent.com/tomochain/luaswap-interface/master/public/images/512x512_App_Icon.png'
+  appName: 'LibraSwap'
 })
